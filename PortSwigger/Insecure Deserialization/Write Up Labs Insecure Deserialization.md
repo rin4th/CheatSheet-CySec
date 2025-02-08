@@ -26,3 +26,12 @@ If `$stored_token` is a non-numeric string, PHP will convert the integer `0` to 
 **Penjelasan** : 
 Since the objection is to delete file, so it can achieve by abuse user-accessible functionality, such as delete user. On delete method it would be delete user and their avatar picture, because of that we have to change the value of avatar_link to desired file.
 
+### Arbitary Object Injection
+
+**Objection** : delete file morale.txt from Carlos's home directory
+**Payload** : 
+source code -> hidden page by add `~` EoF -> login -> change the cookies with serialized below
+`O:14:"CustomTemplate":1:{s:14:"lock_file_path";s:23:"/home/carlos/morale.txt";}`
+**Penjelasan** :
+since on hidden page there's a magic method `__construct` and `__destruct`, you could abuse the method. 
+

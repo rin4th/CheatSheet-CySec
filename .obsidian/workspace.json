@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
+                "file": "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
                 "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Write Up Labs Insecure Deserialization"
+            }
+          },
+          {
+            "id": "c2f6b6eb42aacf10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Concept Cross-Site Request Forgery (CSRF)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -162,17 +178,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2195b7d95ce5b1f5",
+  "active": "c2f6b6eb42aacf10",
   "lastOpenFiles": [
     "PortSwigger/CSRF/Write Up Labs CSRF.md",
-    "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
-    "PortSwigger/XSS/Write Up Labs XSS.md",
-    "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
-    "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
     "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
-    "PortSwigger/Insecure Deserialization/Concept Insecure Deserialization.md",
-    "PortSwigger/Insecure Deserialization",
+    "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
     "PortSwigger/SQL Injection/Concept SQL Injection.md",
+    "PortSwigger/Insecure Deserialization/Concept Insecure Deserialization.md",
+    "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
+    "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+    "PortSwigger/XSS/Write Up Labs XSS.md",
+    "PortSwigger/Insecure Deserialization",
     "PortSwigger/HTTP smuggling",
     "Untitled.canvas"
   ]
