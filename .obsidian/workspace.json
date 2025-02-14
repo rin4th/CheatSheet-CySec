@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/Business Logic Vulnerabilities/Write Up Business Logic Vulnerabilities.md",
+                "file": "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Write Up Business Logic Vulnerabilities"
+              "title": "Write Up Labs JWT Attack"
             }
           }
         ],
@@ -180,15 +180,18 @@
   },
   "active": "c2f6b6eb42aacf10",
   "lastOpenFiles": [
+    "PortSwigger/JWT attack/Concept JWT attack.md",
     "PortSwigger/Access Control Vulnerabilities/Write Up Access Control Vulnerabilities.md",
+    "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
     "PortSwigger/Business Logic Vulnerabilities/Write Up Business Logic Vulnerabilities.md",
+    "PortSwigger/JWT attack",
+    "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
     "PortSwigger/Business Logic Vulnerabilities",
     "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
     "PortSwigger/Access Control Vulnerabilities",
     "PortSwigger/Insecure Deserialization/Concept Insecure Deserialization.md",
     "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
     "PortSwigger/CSRF/Write Up Labs CSRF.md",
-    "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
     "PortSwigger/SQL Injection/Concept SQL Injection.md",
     "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
     "PortSwigger/XSS/Write Up Labs XSS.md",
