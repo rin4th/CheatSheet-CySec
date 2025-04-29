@@ -3,7 +3,7 @@ Cross-Site Request Forgery is a web security vulnerability that allow an attacke
 
 ### How does CSRF Work
 There is three condition to make the attack work:
-1. **A relevant action** : the action in web application should be has reason to induce, such as privillage action that modifying role, or change email action.
+1. **A relevant action** : the action in web application should be has reason to induce, such as privilage action that modifying role, or change email action.
 2. **Cookie-based session handling** : To perform the attack, the victim user should have log in or has the session to target website. So when the performing csrf, the request that induced would be accepted
 3. **No unpredictable request parameters** : the request that perform csrf didn't contain any parameter that has to be guess or manual input, such as old email or old password.
 

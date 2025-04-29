@@ -56,3 +56,4 @@ Dibutuhkanya cookie, namun tidak memvalidasi session siapa
 ```
 **Penjelasan** : 
 Dibutuhkanya csrf token yang valid, dengan begitu. penyerang bisa masuk ke akun yang valid terlebih dahulu, untuk mendapatkan csrf token yang valid
+
