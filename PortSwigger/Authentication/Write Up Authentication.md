@@ -1,4 +1,3 @@
-
 ### Username enumeration via different responses
 **Flow** : bruteforce username and password using wordlist given from portswigger
 

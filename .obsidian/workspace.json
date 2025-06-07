@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/Authentication/Write Up Authentication.md",
+                "file": "PortSwigger/Cache Poisoning/Write Up.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Write Up Authentication"
+              "title": "Write Up"
             }
           },
           {
@@ -222,26 +222,29 @@
   },
   "active": "f27290614e8cdcc6",
   "lastOpenFiles": [
-    "PortSwigger/ClickJacking/Write Up.md",
+    "PortSwigger/Cache Poisoning/Concept.md",
+    "PortSwigger/Cache Poisoning/Write Up.md",
     "PortSwigger/XSS/Write Up Labs XSS.md",
-    "PortSwigger/Authentication/Write Up Authentication.md",
-    "PortSwigger/ClickJacking",
-    "PortSwigger/Business Logic Vulnerabilities/Write Up Business Logic Vulnerabilities.md",
+    "PortSwigger/OAuth/Concept.md",
+    "PortSwigger/Cache Poisoning",
+    "PortSwigger/OAuth/Write Up.md",
+    "PortSwigger/CSRF/Write Up Labs CSRF.md",
+    "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
     "PortSwigger/CORS/Write UP.md",
     "PortSwigger/Host Header Attack/Write Up.md",
+    "PortSwigger/Authentication/Write Up Authentication.md",
+    "PortSwigger/ClickJacking/Write Up.md",
+    "PortSwigger/ClickJacking",
+    "PortSwigger/Business Logic Vulnerabilities/Write Up Business Logic Vulnerabilities.md",
     "PortSwigger/Host Header Attack/Concept.md",
-    "PortSwigger/CSRF/Write Up Labs CSRF.md",
     "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
-    "PortSwigger/OAuth/Write Up.md",
     "PortSwigger/Websocket/Write up.md",
     "PortSwigger/Websocket",
     "PortSwigger/CORS",
-    "PortSwigger/OAuth/Concept.md",
     "PortSwigger/XXE/Write Up Labs XXE.md",
     "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
     "PortSwigger/File Upload Vulnerabilities/Write Up Labs File Upload.md",
     "PortSwigger/OAuth",
-    "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
     "PortSwigger/XXE",
     "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
     "PortSwigger/Host Header Attack",
@@ -252,7 +255,6 @@
     "PortSwigger/JWT attack",
     "PortSwigger/Business Logic Vulnerabilities",
     "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
-    "PortSwigger/Access Control Vulnerabilities",
     "PortSwigger/Insecure Deserialization/Concept Insecure Deserialization.md",
     "Untitled.canvas"
   ]
