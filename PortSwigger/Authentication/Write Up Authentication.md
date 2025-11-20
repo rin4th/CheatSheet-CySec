@@ -5,10 +5,10 @@
 **Flow** : login as wiener -> input 2FA -> go to page /my-account -> logout -> login as carlos -> skip page input 2FA -> direct to page /my-account -> solved
 
 ### Password reset broken logic
-**Flow** : normal flow forgot password -> release on POST forgot password there is username payload -> repeat flow forgot password -> intercept on request -> change username payload to carlos
+**Flow** : normal flow forgot password -> reliaze on POST forgot password there is username payload -> repeat flow forgot password -> intercept on request -> change username payload to carlos
 
 ### Username enumeration via subtly different responses
-**Flow** : normal flow login -> intruder (cluster bomb attack) put payload for every position -> response have different length and the same status code -> filteing by negative 'Invalid username or password'
+**Flow** : normal flow login -> intruder (cluster bomb attack) put payload for every position -> response have different length and the same status code -> filtering by negative 'Invalid username or password'
 
 ### Username enumeration via response timing
 **Flow** : Intruder login pitchfork -> add header `X-Forwarded-For` to bypass IP blocker -> add payload number on `X-Forwarded-For` header -> add payload first on username -> add >100 string on password -> start the attack -> lookup that 'adm' payload required long time -> it means that's the correct username -> bruteforce the password

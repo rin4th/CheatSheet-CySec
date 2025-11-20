@@ -1,4 +1,4 @@
-cache key: components that needed by the cache
+	cache key: components that needed by the cache
 unkeyed: components that are not needed by the cache
 
 **Constructing a web cache poisoning attack**
