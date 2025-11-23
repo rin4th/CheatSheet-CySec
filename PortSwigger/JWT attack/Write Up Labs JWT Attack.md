@@ -75,3 +75,5 @@ exploit server:
 
 on jwt header, change the value of kid to kid on exploit server -> add param "jku":"URL-To-Exploit-Server" -> on tab JSON Web Token Sign to resign the signature -> send
 
+### JWT authentication bypass via kid header path traversal
+**Flow** :

