@@ -71,7 +71,7 @@ https://github.com/Crypto-Cat/CTF/blob/main/web/WebSecurityAcademy/xss/dom_xss_j
 
 ### Reflected DOM XSS
 
-**Payload**: `\"-alert(1)}`
+**Payload**: `\"-alert(1)}//`
 **Penjelasan** : Pada file searchResult.js terdapat variable searchResultObj dimana akan menyimpan response dari server dalam bentuk JSON, dan variable tersebut akan dipakai pada line
 ```js
 var searchTerm = searchResultsObj.searchTerm

