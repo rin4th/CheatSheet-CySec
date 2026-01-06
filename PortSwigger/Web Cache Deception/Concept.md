@@ -1,0 +1,1 @@
+Web Cache Deception is is a vulnerability that changes the caching system, which will store cache on the extension endpoint, even though the content stored is dynamic
