@@ -291,12 +291,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+                "file": "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Write Up Labs SQL Injection"
+              "title": "Write Up Labs JWT Attack"
             }
           }
         ],
@@ -373,7 +373,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+                "file": "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -383,7 +383,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Write Up Labs SQL Injection"
+              "title": "Backlinks for Write Up Labs JWT Attack"
             }
           },
           {
@@ -444,14 +444,17 @@
   },
   "active": "68a4cd27efb9b403",
   "lastOpenFiles": [
-    "PortSwigger/SQL Injection/Concept SQL Injection.md",
-    "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+    "PortSwigger/JWT attack/Concept JWT attack.md",
+    "HTB/Bashed.md",
+    "HTB/Access (windows).md",
     "HTB/Analytic.md",
+    "HTB/Images/Pasted image 20260414203048.png",
+    "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
+    "PortSwigger/SQL Injection/Concept SQL Injection.md",
     "OSCP/13. Locating Public Exploits.md",
     "OSCP/11. Client Side Attack.md",
     "OSCP/17. Windows Privilege Escalation.md",
     "OSCP/16. Password Attack.md",
-    "HTB/Bashed.md",
     "Images/Pasted image 20260404195943.png",
     "Images/Pasted image 20260404195847.png",
     "Images/Pasted image 20260404195844.png",
@@ -461,7 +464,6 @@
     "Images/Pasted image 20260404193956.png",
     "Images/Pasted image 20260404193712.png",
     "Images/Pasted image 20260404193634.png",
-    "Images/Pasted image 20260404193620.png",
     "HTB/Images",
     "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
     "HTB",
@@ -483,8 +485,6 @@
     "PortSwigger/XXE/Write Up Labs XXE.md",
     "PortSwigger/CORS/Write UP.md",
     "PortSwigger/CSRF/Write Up Labs CSRF.md",
-    "PortSwigger/Cache Poisoning/Write Up.md",
-    "PortSwigger/Command Injection/Write Up Labs Command Injection.md",
     "PortSwigger/GraphQL",
     "OSCP",
     "PortSwigger/Web Cache Deception",
