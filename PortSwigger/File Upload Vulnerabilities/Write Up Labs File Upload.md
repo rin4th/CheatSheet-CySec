@@ -13,7 +13,7 @@
 
 ### Web shell upload via path traversal
 **Flow** :
-	`Login -> create script php that retrieve flag -> change avatar -> upload -> intercept -> change the value of 'filename' to '..%2fpayload.php' -> forward -> see the image -> submit`
+`Login -> create script php that retrieve flag -> change avatar -> upload -> intercept -> change the value of 'filename' to '..%2fpayload.php' -> forward -> see the image -> submit`
 
 ### Web shell upload via extension blacklist bypass
 **Flow** :

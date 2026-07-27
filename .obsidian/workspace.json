@@ -4,303 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "97882436b5e0bf31",
+        "id": "4a7df2a87c55e1ab",
         "type": "tabs",
         "children": [
           {
-            "id": "2195b7d95ce5b1f5",
+            "id": "087a3630bf597c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
+                "file": "OSCP/OSCP B/DC01 10.10.222.146 AD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Write Up Labs Insecure Deserialization"
-            }
-          },
-          {
-            "id": "c2f6b6eb42aacf10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/XSS/Write Up Labs XSS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs XSS"
-            }
-          },
-          {
-            "id": "aaaaaa3d5093df02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/XSS/Write Up Labs XSS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs XSS"
-            }
-          },
-          {
-            "id": "f27290614e8cdcc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/OAuth/Write Up.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up"
-            }
-          },
-          {
-            "id": "cd2c2cf500e32a10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs SSRF"
-            }
-          },
-          {
-            "id": "3e94e20daa460517",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/File Upload Vulnerabilities/Write Up Labs File Upload.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs File Upload"
-            }
-          },
-          {
-            "id": "2d9ea48648012434",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/XSS/Write Up Labs XSS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs XSS"
-            }
-          },
-          {
-            "id": "aa17e65c18de8867",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/CSRF/Write Up Labs CSRF.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs CSRF"
-            }
-          },
-          {
-            "id": "5b82b1b96b4fa76e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/HTTP Smuggling/Concept.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Concept"
-            }
-          },
-          {
-            "id": "1f1d4b804d942bd4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/GraphQL/Concept.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Concept"
-            }
-          },
-          {
-            "id": "f48dc92f282ef7d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/XXE/Write Up Labs XXE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs XXE"
-            }
-          },
-          {
-            "id": "4d5b3cb3a4e952d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs SQL Injection"
-            }
-          },
-          {
-            "id": "f6701529d555a673",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSCP/6. Information Gathering.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6. Information Gathering"
-            }
-          },
-          {
-            "id": "cc233b7530aa514e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSCP/7. Vulnerability Scanning.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "7. Vulnerability Scanning"
-            }
-          },
-          {
-            "id": "72e41af94ccd3b95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSCP/9. Common Web Applications.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "9. Common Web Applications"
-            }
-          },
-          {
-            "id": "29a44cf20713d8af",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
-            }
-          },
-          {
-            "id": "d9cb43da5af21cbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSCP/13. Locating Public Exploits.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13. Locating Public Exploits"
-            }
-          },
-          {
-            "id": "1dc1d0f68fe4e526",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "14. Fixing Exploit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "14. Fixing Exploit"
-            }
-          },
-          {
-            "id": "efd821759e9c56f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSCP/17. Windows Privilege Escalation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "17. Windows Privilege Escalation"
-            }
-          },
-          {
-            "id": "4b7270d574936448",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HTB/Analytic.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Analytic"
-            }
-          },
-          {
-            "id": "68a4cd27efb9b403",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Write Up Labs JWT Attack"
+              "title": "DC01 10.10.222.146 AD"
             }
           }
-        ],
-        "currentTab": 20
+        ]
       }
     ],
     "direction": "vertical"
@@ -373,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/JWT attack/Write Up Labs JWT Attack.md",
+                "file": "OSCP/OSCP B/DC01 10.10.222.146 AD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -383,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Write Up Labs JWT Attack"
+              "title": "Backlinks for DC01 10.10.222.146 AD"
             }
           },
           {
@@ -429,7 +150,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -442,54 +164,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68a4cd27efb9b403",
+  "active": "087a3630bf597c8f",
   "lastOpenFiles": [
-    "PortSwigger/JWT attack/Concept JWT attack.md",
-    "HTB/Bashed.md",
-    "HTB/Access (windows).md",
-    "HTB/Analytic.md",
-    "HTB/Images/Pasted image 20260414203048.png",
-    "PortSwigger/SQL Injection/Write Up Labs SQL Injection.md",
-    "PortSwigger/SQL Injection/Concept SQL Injection.md",
-    "OSCP/13. Locating Public Exploits.md",
-    "OSCP/11. Client Side Attack.md",
-    "OSCP/17. Windows Privilege Escalation.md",
+    "OSCP/OSCP B/IP4 192.168.222.149 Linux.md",
+    "OSCP/OSCP B/DC01 10.10.222.146 AD.md",
+    "Proving Ground/Access.md",
+    "Proving Ground/Algernon.md",
+    "Proving Ground/AuthBy.md",
+    "Proving Ground/Craft.md",
+    "Proving Ground/Exfiltrated.md",
+    "Proving Ground/Heist.md",
+    "Proving Ground/Pelican.md",
+    "Proving Ground/Twiggy.md",
+    "Proving Ground/Vault.md",
+    "Proving Ground/Images/Pasted image 20260718003725.png",
+    "Proving Ground/Images/Pasted image 20260718003646.png",
+    "OSCP/secura/VM01 192.168.222.97.md",
+    "OSCP/secura/VM02 192.168.222.96.md",
+    "OSCP/secura/VM03 192.168.222.95.md",
+    "Proving Ground/Images/Pasted image 20260718003504.png",
+    "OSCP/OSCP B/IP5 192.168.222.150 Linux.md",
     "OSCP/16. Password Attack.md",
-    "Images/Pasted image 20260404195943.png",
-    "Images/Pasted image 20260404195847.png",
-    "Images/Pasted image 20260404195844.png",
-    "Images/Pasted image 20260404195354.png",
-    "Images/Pasted image 20260404195119.png",
-    "Images/Pasted image 20260404194959.png",
-    "Images/Pasted image 20260404193956.png",
-    "Images/Pasted image 20260404193712.png",
-    "Images/Pasted image 20260404193634.png",
-    "HTB/Images",
-    "PortSwigger/Server-side request forgery (SSRF)/Write Up Labs SSRF.md",
-    "HTB",
-    "PortSwigger/Path Travel Labs/Write Up Path Travel Labs.md",
-    "PortSwigger/OAuth/Write Up.md",
-    "PortSwigger/Host Header Attack/Write Up.md",
-    "PortSwigger/HTTP Smuggling/Write Up.md",
-    "PortSwigger/HTTP Smuggling/Concept.md",
-    "OSCP/15. Antivirus Evasion.md",
-    "Untitled.md",
-    "14. Fixing Exploit.md",
-    "OSCP/Images",
-    "OSCP/9. Common Web Applications.md",
-    "OSCP/7. Vulnerability Scanning.md",
-    "Untitled 1",
-    "Images",
+    "Proving Ground/Images/Pasted image 20260718003253.png",
+    "Proving Ground/Images/Pasted image 20260718003206.png",
+    "Proving Ground/Images/Pasted image 20260718002922.png",
+    "Proving Ground/Images/Pasted image 20260718002758.png",
+    "Proving Ground/Images/Pasted image 20260718002043.png",
+    "Proving Ground/Images/Pasted image 20260718001057.png",
+    "Proving Ground/Images/Pasted image 20260718000945.png",
+    "OSCP/OSCP B/IP6 192.168.222.151 Windows.md",
+    "OSCP/OSCP B/MS01 192.168.222.147 AD.md",
+    "OSCP/OSCP B/MS02 10.10.222.148 AD.md",
+    "PortSwigger/Insecure Deserialization/Write Up Labs Insecure Deserialization.md",
     "PortSwigger/XSS/Write Up Labs XSS.md",
-    "OSCP/6. Information Gathering.md",
-    "PortSwigger/XXE/Write Up Labs XXE.md",
-    "PortSwigger/CORS/Write UP.md",
-    "PortSwigger/CSRF/Write Up Labs CSRF.md",
-    "PortSwigger/GraphQL",
-    "OSCP",
-    "PortSwigger/Web Cache Deception",
-    "PortSwigger/LLM Attacks",
-    "PortSwigger/API Testing",
+    "PortSwigger/OAuth/Write Up.md",
+    "HTB/Analytic.md",
+    "OSCP/17. Windows Privilege Escalation.md",
+    "14. Fixing Exploit.md",
+    "OSCP/9. Common Web Applications.md",
+    "Proving Ground/Images",
+    "Proving Ground",
+    "OSCP/OSCP B/Images",
+    "OSCP/OSCP B",
+    "OSCP/secura/Images",
+    "OSCP/secura",
+    "OSCP/OSCP A/Images",
+    "OSCP/OSCP A",
+    "HTB/Images",
+    "HTB",
     "Untitled.canvas"
   ]
 }
